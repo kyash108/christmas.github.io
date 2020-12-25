@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap');
 *
+
 {
     margin: 0;
     padding: 0;
@@ -9,17 +11,18 @@
 body{
     overflow: hidden;
 }
-footer{
-    z-index: 1;
-    color: #ff2a2a;
 
-}
 section{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: #f1f1f1;
+}
+.footer{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Andika New Basic';
 }
 section .box{
     position: absolute;
@@ -47,7 +50,7 @@ section .box .circle{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 1;
 }
 section .box .circle::before{
     content: '';
@@ -61,7 +64,7 @@ section .box .circle::before{
 }
 section .box .circle h2{
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     font-size: 4em;
     color: #ff2a2a;
     text-align: center;
@@ -96,5 +99,4 @@ section i:nth-child(even){
         opacity: 0;
     }
 }
-
 
