@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Merry Christmas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="box">
+                <div class="circle">
+                    <h2>Merry<br>Christmas<br></h2>
+                </div>
+                <h4 class="footer">&#169;Yash</h4>
+            </div>
+        </section>
+        <script>
+            function bubbles(){
+                var count = 200;
+                var section = document.querySelector('section');
+                var i = 0;
+                while (i < count){
+                    var bubble = document.createElement('i');
+                    var x =  Math.floor(Math.random() * window.innerWidth);
+                    var y = Math.floor(Math.random() * window.innerHeight);
+                    var size = Math.random() * 10;
+                    bubble.style.left = x+'px';
+                    bubble.style.top = y+'px';
+                    bubble.style.width = 1+size+'px';
+                    bubble.style.height = 1+size+'px';
+                    bubble.style.animationDuration = 10+size+'s';
+                    bubble.style.animationDelay = -size+'s';
+
+                    section.appendChild(bubble);
+                    i++
+                }
+            }
+            bubbles()
+        </script>
+    </body>
+<!--    <footer class="footer">&#169;Yash</footer>-->
+</html>
