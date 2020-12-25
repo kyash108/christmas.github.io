@@ -21,8 +21,8 @@ section{
 }
 .footer{
     text-align: center;
-    text-decoration: underline;
     font-family: 'Andika New Basic';
+    color: #ff2a2a;
 }
 section .box{
     position: absolute;
